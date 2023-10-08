@@ -1,0 +1,111 @@
+.content .banner{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.banner .content-box {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.banner .content-box.curipira-img h3{
+    margin: 0 0 0 80px;
+}
+
+.banner .content-box.curipira-img figure{
+    margin: 0 0 0 80px;
+}
+
+.banner .content-box.curipira-img figure img{
+    height: 375px;
+}
+
+.info-body h3{
+    margin: 30px 0 30px 0;
+}
+
+.info-body .team-display{
+    width: 100%;
+    /* height: 500px; */
+    box-sizing: border-box;
+    padding: 0 5% 0 5%;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info-body .team-display .member{
+    /* width: 50%; */
+    box-sizing: border-box;
+    padding: 5%;
+    height: 300px;
+    display: flex;
+}
+
+.info-body .team-display .member figure {
+    margin: 0;
+}
+
+.info-body .team-display .member.mleft{
+    flex-direction: row-reverse;
+}
+
+.info-body .team-display .member figure img{
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.info-body .team-display .member .member-info {
+    margin: 0 5% 0 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.info-body .team-display .member .member-info h4{
+    font-size: 40px;
+    color: #103100;
+    margin: 0;
+}
+
+.member-info p{
+    margin-top: 5px;
+}
+
+.member.mleft .member-info p{
+    text-align: right;
+}
+
+.info-body .team-display .member .member-info h4.hidden{
+    opacity: .2;
+    filter: blur(5px);
+    transform: translateY(-15px);
+    transition: 1s;
+}
+
+.info-body .team-display .member figure.hidden{
+    opacity: .2;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: 1s;
+}
+
+.info-body .team-display .member.mleft figure.hidden{
+    transform: translateX(50%);
+}
+
+.info-body .team-display .member .member-info h4.show,
+.info-body .team-display .member figure.show,
+.info-body .team-display .member.mleft figure.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+@media (max-width: 1100px) {
+
+}
