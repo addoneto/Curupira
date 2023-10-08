@@ -389,6 +389,32 @@ a {
     }
 }
 
+.info-block .mobile-image-container {
+    display: none;
+}
+
+.info-block .mobile-image-container figure{
+    width: 90%;
+    margin: auto;
+}
+
+.info-block .mobile-image-container figure img{
+    width: 100%;
+}
+
+.info-block .mobile-image-container#tabmobile figure {
+    width: 80%;
+}
+
+.mobile-image-container.hidden {
+    filter: blur(8px);
+    transition: all .5s;
+}
+
+.mobile-image-container.show {
+    filter: blur(0);
+}
+
 @media (max-width: 1100px) {
     .content .info-body .info-block{
         display: block;
@@ -413,8 +439,186 @@ a {
     }
 }
 
-@media (max-width: 790px) {
-    /* .banner .b-image {
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburguer .bar{
+    color: #ffffff00;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: ease-in-out .4s;
+    background-color: #A0E870;
+}
+
+@media (max-width: 850px) {
+    header{
+        position: fixed;
+        z-index: 10;
+    }
+
+    .banner {
+        padding-top: 50px;
+    }
+
+    .banner .b-image {
         display: none;
-    } */
+    }
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.act .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.act .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburguer.act .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .right-nav {
+        z-index: 10;
+        position: fixed;
+        left: 100%;
+        justify-content: center;
+        background-color: #A0E870;
+        height: auto !important;
+        width: 100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    .right-nav ul li{
+        display: block;
+        margin-top: 20px;
+        margin-left:0;
+    }
+
+    .right-nav ul li:nth-child(3){
+        margin-bottom: 20px;
+    }
+
+    .right-nav ul li a{
+        font-size: 24px !important;
+        color: #0d2800;
+    }
+
+    .right-nav ul li a.map{
+        color: #F4170C;
+        background-color: transparent;
+    }
+
+    .right-nav.act {
+        left: 0;
+    }
+
+    header nav .nav-container{
+        height: 65%;
+    }
+
+    .title-container h1{
+        font-size: 25px;
+    }
+
+    .banner {
+        height: 50vh !important;
+        display: block !important;
+        background-color: #103100;
+    }
+
+    .banner .call-text {
+        width: 100%;
+    }
+
+    .banner .call-text .text-container h2{
+        font-size: 35px;
+        color:#A0E870;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .banner .call-text .text-container h2 br {
+        display: none;
+    }
+
+    .banner .call-text .text-container p {
+        color:#D8D8D8;
+        font-size: 18px;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .banner .call-text .text-container a {
+        font-size: 18px;
+    }
+
+    .info-body {
+        background-color: #103100 !important;
+        padding-bottom: 40px;
+    }
+
+    .info-body .info-block{
+        width: 100% !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+    }
+
+    .info-block .mobile-image-container {
+        display: block;
+    }
+
+    .info-block .image-container {
+        display: none;
+    }
+
+    .info-block .text-container{
+        text-align: center;
+    }
+
+    .info-block .text-container h3{
+        font-size: 32px;
+        color: #A0E870;
+    }
+
+    .info-block .text-container p{
+        color:#D8D8D8;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .info-block .text-container.left{
+        margin-left: 0;
+    }
+    
+    .info-body .hackathon-note {
+        display: none;
+    }
+
+    footer {
+        height: auto;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    footer .fcontent{
+        width: 100%;
+        display: block;
+    }
+
+    footer .fcontent .description{
+        margin: 0;
+        width: 100%;
+    }
+
+    footer .fcontent .description .site-info h2{
+        font-size: 30px;
+        margin-left: 15px;
+    }
 }

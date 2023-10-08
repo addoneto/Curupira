@@ -25,3 +25,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observedImages.forEach((el) => observer.observe(el));
+
+const hamb = document.querySelector(".hamburguer");
+const menu = document.querySelector(".right-nav");
+hamb.addEventListener('click', () => {
+    hamb.classList.toggle("act");
+    menu.classList.toggle("act");
+})
