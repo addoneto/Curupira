@@ -12,3 +12,11 @@
 .info-body .map .load-map.load{
     background-color: rgb(255, 255, 255);
 }
+@media (max-width: 850px) {
+    .banner {
+        height: auto !important;
+    }
+    .info-body {
+        padding-bottom: 0 !important;
+    }
+}

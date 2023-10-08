@@ -117,6 +117,7 @@ header nav .nav-container{
 
 .banner .call-text .text-container {
     max-width: 80%;
+    margin-left: 5%;
 }
 
 .banner .call-text .text-container h2,
@@ -208,11 +209,26 @@ header nav .nav-container{
     height: 100%;
 }
 
+.rndimg {
+    border-radius: 12px;
+}
+
+#cellphone-mockup:hover{
+    cursor: pointer;
+    transform: rotate(-5deg) !important;
+}
+
 .info-block .image-container figure ,
 .info-block .image-container figure img{
     width: 100%;
     height: auto;
     margin: 0;
+    transition: .6s;
+}
+
+.info-block .image-container figure img:hover{
+    transform: scale(1.05);
+    /* cursor: pointer; */
 }
 
 .info-block .text-container h3{
@@ -332,6 +348,12 @@ footer .fcontent .pages-container li a{
 
 footer .fcontent .pages-container li a:hover{
     cursor: pointer;
+}
+
+.nasa:hover{
+    /* cursor: grab; */
+    opacity: .8 !important;
+    transform: perspective(80px) rotateY(-4deg) !important;
 }
 
 .nasa.hidden {
@@ -460,10 +482,6 @@ a {
         z-index: 10;
     }
 
-    .banner {
-        padding-top: 50px;
-    }
-
     .banner .b-image {
         display: none;
     }
@@ -526,7 +544,8 @@ a {
     }
 
     .banner {
-        height: 50vh !important;
+        padding-top: 100px;
+        height: 38vh !important;
         display: block !important;
         background-color: #103100;
     }
@@ -566,6 +585,7 @@ a {
         width: 100% !important;
         background-color: transparent !important;
         padding: 0 !important;
+        margin-top: 50px !important;
     }
 
     .info-block .mobile-image-container {
@@ -597,6 +617,10 @@ a {
         margin-left: 0;
     }
     
+    .info-block .text-container.left h3{
+        margin-top: 0;
+    }
+
     .info-body .hackathon-note {
         display: none;
     }
