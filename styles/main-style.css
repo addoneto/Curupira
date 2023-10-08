@@ -326,6 +326,10 @@ footer .fcontent .pages-container li{
     padding-top: 1rem;
 }
 
+footer .fcontent .pages-container li a{
+    color: black;
+}
+
 footer .fcontent .pages-container li a:hover{
     cursor: pointer;
 }
