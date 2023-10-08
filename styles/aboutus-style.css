@@ -14,13 +14,8 @@ body,html {
     align-items: center;
 }
 
-.banner .content-box.curipira-img h3,
-.banner .content-box.curipira-img figure{
+.banner .content-box.curipira-img h3{
     margin: 0 0 0 80px;
-}
-
-.banner .content-box.curipira-img figure img{
-    height: 375px;
 }
 
 .info-body h3{
@@ -68,7 +63,7 @@ body,html {
 }
 
 .info-body .team-display .member .member-info h4{
-    font-size: 40px;
+    font-size: 35px;
     color: #103100;
     margin: 0;
 }
@@ -76,7 +71,7 @@ body,html {
 .member-info p{
     margin-top: 5px;
 }
-
+.member.mleft .member-info h4,
 .member.mleft .member-info p{
     text-align: right;
 }
@@ -107,14 +102,60 @@ body,html {
     transform: translate(0);
 }
 
-@media (max-width: 1100px) {
+p {
+    color: #545454;
+}
 
+.bold-text.curupira {
+    width: 100%;
+    text-align: center;
+    background-color: #A0E870;
+    padding: 1% 0 1% 0;
+}
+
+.content-why {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 10% 0 10%;
+}
+
+.curupira-img.hidden{
+    opacity: .3;
+    transform: perspective(80px) rotateZ(20deg);
+    transition: 1s;
+}
+
+.curupira-img.show{
+    opacity: 1;
+    transform: perspective(0) rotateZ(0);
+}
+
+.content-why p {
+    max-width: 40%;
+    font-size: 25px;
+}
+
+@media (max-width: 1600px) {
+    .info-body .team-display .member .member-info h4{
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .banner .content-box.about p{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 850px) {
     .banner {
         background-color: white;
         display: block;
+        height: auto !important;
     }
 
     .banner .content-box {
@@ -122,15 +163,10 @@ body,html {
     }
 
     .banner .content-box.curipira-img h3{
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
         font-size: 35px;
-    }
-
-    .banner .content-box.curipira-img figure img{
-        height: 200px;
-    }
-
-    .banner .content-box.curipira-img figure{
-        margin: 0 0 0 20px;
     }
 
     .banner .content-box.about {
@@ -150,7 +186,12 @@ body,html {
     }
 
     .info-body h3{
-        display: none;
+        /* display: none; */
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        padding: 3% 0 3% 0;
+        background-color: #A0E870;
     }
 
     .info-body .team-display{
@@ -176,5 +217,19 @@ body,html {
 
     .info-body .team-display .member figure{
         height: 70%;
+    }
+    .bold-text.curupira {
+        display: none;
+    }
+    .content-why figure img{
+        height: 280px;
+    }
+    .content-why {
+        flex-direction: column-reverse;
+    }
+    .content-why p {
+        text-align: center;
+        max-width: 100%;
+        font-size: 18px;
     }
 }

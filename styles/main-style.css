@@ -604,6 +604,9 @@ a {
         font-size: 32px;
         color: #A0E870;
     }
+    .info-block .text-container h3 span {
+        color: #A0E870;
+    }
 
     .info-block .text-container p{
         color:#D8D8D8;
@@ -644,5 +647,9 @@ a {
     footer .fcontent .description .site-info h2{
         font-size: 30px;
         margin-left: 15px;
+    }
+
+    #tc span{
+        color: #A0E870;
     }
 }
