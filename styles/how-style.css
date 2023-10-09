@@ -37,7 +37,7 @@
 
 .info-body .explanation h3 span{
     font-weight: 800;
-    color:#A0E870;
+    color:#A0E870 !important;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
