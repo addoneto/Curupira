@@ -23,7 +23,7 @@
 
 .info-body .explanation{
     width: 100%;
-    /* height: 500px; */
+    height: auto !important;
     background-color: #A0E870;
     box-sizing: border-box;
     padding: 5%;
